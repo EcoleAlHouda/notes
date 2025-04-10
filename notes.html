@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestion des Notes - École Al-Houda</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #003366;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        nav {
+            background-color: #FFD700;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav a {
+            margin: 0 15px;
+            color: #003366;
+            text-decoration: none;
+            font-size: 1.2em;
+        }
+
+        .container {
+            padding: 20px;
+            text-align: center;
+        }
+
+        footer {
+            background-color: #003366;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        table {
+            width: 80%;
+            margin: 0 auto;
+            border-collapse: collapse;
+        }
+
+        th, td {
+            padding: 10px;
+            border: 1px solid #ddd;
+            text-align: center;
+        }
+
+        th {
+            background-color: #003366;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Gestion des Notes - École Al-Houda</h1>
+    </header>
+
+    <nav>
+        <a href="index.html">Accueil</a>
+        <a href="absences.html">Gestion des Absences</a>
+        <a href="notes.html">Gestion des Notes</a>
+        <a href="communication.html">Communication</a>
+    </nav>
+
+    <div class="container">
+        <h2>Entrer les Notes des Élèves</h2>
+        <table>
+            <tr>
+                <th>Nom de l'Élève</th>
+                <th>Matière</th>
+                <th>Note (sur 100)</th>
+                <th>Date</th>
+            </tr>
+            <tr>
+                <td>Élève 1</td>
+                <td>Mathématiques</td>
+                <td><input type="number" name="note" min="0" max="100" required></td>
+                <td><input type="date" name="date"></td>
+            </tr>
+            <tr>
+                <td>Élève 2</td>
+                <td>Français</td>
+                <td><input type="number" name="note" min="0" max="100" required></td>
+                <td><input type="date" name="date"></td>
+            </tr>
+            <!-- Ajoute plus de lignes d'élèves ici -->
+        </table>
+        <br>
+        <button>Enregistrer les Notes</button>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 École Al-Houda - Tous droits réservés</p>
+    </footer>
+
+</body>
+</html>
